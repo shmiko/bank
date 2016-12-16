@@ -32,6 +32,8 @@ function getBalance(account){
 	console.log("the current balance is ", account.balance);
 	if (isInDebt){
 		console.log("Your balance is in the negative, you owe $", account.balance);
+	} else {
+		console.log("Your balance is in the positive, you have $", account.balance);
 	}
 	return account.balance;
 }
@@ -42,4 +44,7 @@ withdraw(account,6);
 getBalance(account);
 
 withdraw(account,26);
+getBalance(account);
+
+deposit(account,36);
 getBalance(account);
