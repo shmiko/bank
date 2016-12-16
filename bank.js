@@ -10,6 +10,9 @@ function deposit(account, amount){
 	//or account.balance =+ amount;
 	account.balance = newAmount;
 	console.log("the new balance is ", newAmount);
+	if (account.balance > 0){
+		isInDebt = false;
+	}
 	return newAmount; //not required
 }
 
@@ -19,15 +22,17 @@ function withdraw(account, amount){
 	//or account.balance =- amount;
 	account.balance = newAmount;
 	console.log("the new balance is ", newAmount);
+	if (account.balance < 0){
+		isInDebt = true;
+	}
 	return newAmount; //not required
 }
 
 function getBalance(account){
 	console.log("the current balance is ", account.balance);
-	if (account.balance < 0){
-		isInDebt = true;
+	if (isInDebt){
+		console.log("Your balance is in the negative, you owe $", account.balance);
 	}
-	console.log("Your balance is in the negative, you owe $", account.balance);
 	return account.balance;
 }
 
