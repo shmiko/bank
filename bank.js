@@ -84,3 +84,14 @@ deposit(jacksAccount,36);
 getBalance(jacksAccount);
 
 console.log("Accounts should be ",accounts);
+
+
+var jensAccount = createAccount({
+	username: 'jen001',
+	balance: 12
+});
+
+console.log(accounts);
+
+var exitingJensAccount = getAccount('jen001');
+console.log(exitingJensAccount);
