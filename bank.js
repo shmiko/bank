@@ -2,6 +2,12 @@ var account = {
 	balance : 0
 }
 
+var accounts = [
+	account = {
+		balance : 0
+	}
+];
+
 var isInDebt = false;
 
 function deposit(account, amount){
