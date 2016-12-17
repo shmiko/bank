@@ -15,7 +15,13 @@ function createAccount(account){
 }
 
 function getAccount(username){
-	
+	for (i = 0; i < accounts.account[1].length; i++){
+		if (accounts.account[1] == username) {
+			return username; 
+		} else {
+			return null;
+		}
+	}
 }
 
 var isInDebt = false;
