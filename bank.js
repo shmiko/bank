@@ -14,7 +14,7 @@ function getAccount(username){
 	var matchedAccount;
 	// for (i = 0; i < accounts.length; i++){
 	accounts.forEach(function(account){
-		if (accounts.username === username) {
+		if (account.username === username) {
 			console.log("You found username ", username);
 			matchedAccount = account;
 		} else {
@@ -60,7 +60,7 @@ function getBalance(account){
 	}
 	return account.balance;
 }
-console.log(accounts);
+
 
 var existingAccountLilia = getAccount('Lilia');
 console.log(existingAccountLilia);
@@ -82,3 +82,5 @@ getBalance(jacksAccount);
 
 deposit(jacksAccount,36);
 getBalance(jacksAccount);
+
+console.log("Accounts should be ",accounts);
