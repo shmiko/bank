@@ -63,9 +63,9 @@ function getBalance(account){
 
 
 var existingAccountLilia = getAccount('Lilia');
-console.log(existingAccountLilia);
+console.log("Looking for Lilias account",existingAccountLilia);
 var existingAccountJack = getAccount('Jack');
-console.log(existingAccountJack);
+console.log("Looking for Jacks account",existingAccountJack);
 //tests
 var liliasAccount = createAccount({balance:100,username:"Lilia"});
 
