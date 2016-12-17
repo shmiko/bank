@@ -1,9 +1,9 @@
-var account = {
-	balance : 0
-}
+// var account = {
+// 	balance : 0
+// }
 
 var accounts = [
-	account{
+	{
 		balance : 0,
 		username: "Jack"
 	}
@@ -16,8 +16,8 @@ function createAccount(account){
 }
 
 function getAccount(username){
-	for (i = 0; i < accounts.account[1].length; i++){
-		if (accounts.account[1] == username) {
+	for (i = 0; i < accounts.length; i++){
+		if (accounts[1] == username) {
 			console.log("You found username ", username);
 			return username; 
 		} else {
