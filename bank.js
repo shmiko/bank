@@ -95,4 +95,4 @@ var jensAccount = createAccount({
 console.log("accounts should be ",accounts);
 
 var exitingJensAccount = getAccount('jen001');
-console.log(exitingJensAccount);
+console.log("Checking for Jens account ",exitingJensAccount);
