@@ -3,10 +3,20 @@ var account = {
 }
 
 var accounts = [
-	account = {
-		balance : 0
+	account{
+		balance : 0,
+		username: "Jack"
 	}
 ];
+
+function createAccount(account){
+	accounts.account[1].push(account);
+	return account;
+}
+
+function getAccount(username){
+	
+}
 
 var isInDebt = false;
 
