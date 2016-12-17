@@ -63,14 +63,14 @@ function getBalance(account){
 
 //tests
 var liliasAccount = createAccount({balance:100,username:"Lilia"});
-getAccount("Lilia");
+getAccount('Lilia');
 
 deposit(liliasAccount,12);
 withdraw(liliasAccount,6);
 getBalance(liliasAccount);
 
 var jacksAccount = createAccount({balance:120,username:"Jack"});
-getAccount("Jack");
+getAccount('Jack');
 
 withdraw(jacksAccount,26);
 getBalance(jacksAccount);
