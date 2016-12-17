@@ -80,7 +80,7 @@ getBalance(jacksAccount);
 deposit(jacksAccount,36);
 getBalance(jacksAccount);
 
-console.log("Accounts should be ",accounts);
+//console.log("Accounts should be ",accounts);
 
 var existingAccountLilia = getAccount('Lilia');
 console.log("Looking for Lilias account",existingAccountLilia);
