@@ -11,20 +11,23 @@ var accounts = [
 
 function createAccount(account){
 	accounts.push(account);
-	console.log("You just added ", account[1] , " to the accounts");
+	console.log("You just added ", account , " to the accounts");
 	return account;
 }
 
 function getAccount(username){
-	for (i = 0; i < accounts.length; i++){
-		if (accounts[1] == username) {
+	var matchedAccount;
+	// for (i = 0; i < accounts.length; i++){
+	accounts.forEach(function(account){
+		if (accounts.username === username) {
 			console.log("You found username ", username);
-			return username; 
+			matchedAccount = account;
 		} else {
-			console.log("The username ", username, " was not found!");
-			return null;
+			console.log(username, " was not found.");
 		}
-	}
+		
+	});
+	return matchedAccount; 
 }
 
 var isInDebt = false;
@@ -64,7 +67,7 @@ function getBalance(account){
 }
 
 //tests
-createAccount(100,"Lilia");
+createAccount({balance:100,username:"Lilia"});
 getAccount("Lilia");
 
 deposit(account,12);
