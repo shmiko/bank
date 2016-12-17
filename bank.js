@@ -10,15 +10,18 @@ var accounts = [
 ];
 
 function createAccount(account){
-	accounts.account[1].push(account);
+	accounts.push(account);
+	console.log("You just added ", account[1] , " to the accounts");
 	return account;
 }
 
 function getAccount(username){
 	for (i = 0; i < accounts.account[1].length; i++){
 		if (accounts.account[1] == username) {
+			console.log("You found username ", username);
 			return username; 
 		} else {
+			console.log("The username ", username, " was not found!");
 			return null;
 		}
 	}
@@ -61,6 +64,9 @@ function getBalance(account){
 }
 
 //tests
+createAccount(100,"Lilia");
+getAccount("Lilia");
+
 deposit(account,12);
 withdraw(account,6);
 getBalance(account);
