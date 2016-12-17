@@ -2,12 +2,7 @@
 // 	balance : 0
 // }
 
-var accounts = [
-	{
-		balance : 0,
-		username: "Jack"
-	}
-];
+var accounts = [];
 
 function createAccount(account){
 	accounts.push(account);
@@ -67,15 +62,18 @@ function getBalance(account){
 }
 
 //tests
-createAccount({balance:100,username:"Lilia"});
+var liliasAccount = createAccount({balance:100,username:"Lilia"});
 getAccount("Lilia");
 
-deposit(account,12);
-withdraw(account,6);
-getBalance(account);
+deposit(liliasAccount,12);
+withdraw(liliasAccount,6);
+getBalance(liliasAccount);
 
-withdraw(account,26);
-getBalance(account);
+var jacksAccount = createAccount({balance:120,username:"Jack"});
+getAccount("Jack");
 
-deposit(account,36);
-getBalance(account);
+withdraw(jacksAccount,26);
+getBalance(jacksAccount);
+
+deposit(jacksAccount,36);
+getBalance(jacksAccount);
