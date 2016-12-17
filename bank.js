@@ -60,17 +60,22 @@ function getBalance(account){
 	}
 	return account.balance;
 }
+console.log(accounts);
 
+var existingAccountLilia = getAccount('Lilia');
+console.log(existingAccountLilia);
+var existingAccountJack = getAccount('Jack');
+console.log(existingAccountJack);
 //tests
 var liliasAccount = createAccount({balance:100,username:"Lilia"});
-getAccount('Lilia');
+
 
 deposit(liliasAccount,12);
 withdraw(liliasAccount,6);
 getBalance(liliasAccount);
 
 var jacksAccount = createAccount({balance:120,username:"Jack"});
-getAccount('Jack');
+//getAccount('Jack');
 
 withdraw(jacksAccount,26);
 getBalance(jacksAccount);
