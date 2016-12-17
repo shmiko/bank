@@ -62,19 +62,16 @@ function getBalance(account){
 }
 
 
-var existingAccountLilia = getAccount('Lilia');
-console.log("Looking for Lilias account",existingAccountLilia);
-var existingAccountJack = getAccount('Jack');
-console.log("Looking for Jacks account",existingAccountJack);
+
 //tests
-var liliasAccount = createAccount({balance:100,username:"Lilia"});
+var liliasAccount = createAccount({username:"Lilia",balance:100});
 
 
 deposit(liliasAccount,12);
 withdraw(liliasAccount,6);
 getBalance(liliasAccount);
 
-var jacksAccount = createAccount({balance:120,username:"Jack"});
+var jacksAccount = createAccount({username:"Jack",balance:120});
 //getAccount('Jack');
 
 withdraw(jacksAccount,26);
@@ -85,6 +82,10 @@ getBalance(jacksAccount);
 
 console.log("Accounts should be ",accounts);
 
+var existingAccountLilia = getAccount('Lilia');
+console.log("Looking for Lilias account",existingAccountLilia);
+var existingAccountJack = getAccount('Jack');
+console.log("Looking for Jacks account",existingAccountJack);
 
 var jensAccount = createAccount({
 	username: 'jen001',
