@@ -15,10 +15,10 @@ function getAccount(username){
 	// for (i = 0; i < accounts.length; i++){
 	accounts.forEach(function(account){
 		if (account.username === username) {
-			console.log("You found username ", username);
+			//console.log("You found username ", username);
 			matchedAccount = account;
 		} else {
-			console.log(username, " was not found.");
+			//console.log(username, " was not found.");
 		}
 		
 	});
