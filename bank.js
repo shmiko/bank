@@ -62,8 +62,6 @@ function getBalance(account){
 }
 
 
-
-//tests
 var liliasAccount = createAccount({username:"Lilia",balance:100});
 
 
