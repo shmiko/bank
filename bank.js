@@ -70,7 +70,7 @@ withdraw(liliasAccount,6);
 getBalance(liliasAccount);
 
 var jacksAccount = createAccount({username:"Jack",balance:120});
-//getAccount('Jack');
+getAccount('Jack');
 
 withdraw(jacksAccount,26);
 getBalance(jacksAccount);
