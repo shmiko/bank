@@ -81,9 +81,9 @@ getBalance(jacksAccount);
 //console.log("Accounts should be ",accounts);
 
 var existingAccountLilia = getAccount('Lilia');
-console.log("Looking for Lilias account",existingAccountLilia);
+//console.log("Looking for Lilias account",existingAccountLilia);
 var existingAccountJack = getAccount('Jack');
-console.log("Looking for Jacks account",existingAccountJack);
+//console.log("Looking for Jacks account",existingAccountJack);
 
 var jensAccount = createAccount({
 	username: 'jen001',
