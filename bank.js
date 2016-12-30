@@ -63,7 +63,7 @@ function getBalance(account){
 
 
 var liliasAccount = createAccount({username:"Lilia",balance:100});
-
+http://www.imschmitten.com/assets/js/Acc/Account/Manage/
 
 deposit(liliasAccount,12);
 withdraw(liliasAccount,6);
@@ -78,7 +78,7 @@ getBalance(jacksAccount);
 deposit(jacksAccount,36);
 getBalance(jacksAccount);
 
-console.log("Accounts should be ",accounts);
+//console.log("Accounts should be ",accounts);
 
 var existingAccountLilia = getAccount('Lilia');
 console.log("Looking for Lilias account",existingAccountLilia);
