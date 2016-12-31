@@ -95,4 +95,4 @@ console.log("accounts should be ",accounts);
 var exitingJensAccount = getAccount('jen001');
 console.log("Checking for Jens account ",exitingJensAccount);
 
-//ok done for now
+//ok done for now, will need to add user
