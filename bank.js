@@ -90,7 +90,7 @@ var jensAccount = createAccount({
 	balance: 12
 });
 
-//console.log("accounts should be ",accounts);
+console.log("accounts should be ",accounts);
 
 var exitingJensAccount = getAccount('jen001');
 console.log("Checking for Jens account ",exitingJensAccount);
