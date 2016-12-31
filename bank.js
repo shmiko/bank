@@ -96,3 +96,4 @@ var exitingJensAccount = getAccount('jen001');
 console.log("Checking for Jens account ",exitingJensAccount);
 
 //ok done for now, will need to add user auth and sso
+// and karma tests
