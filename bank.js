@@ -39,8 +39,6 @@ function deposit(account, amount){
 	return newAmount; //not required
 }
 
-
-//lll
 function withdraw(account, amount){
 	console.log("the withdraw amount is ", amount);
 	var newAmount = account.balance - amount;
