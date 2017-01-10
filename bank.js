@@ -87,7 +87,7 @@ console.log("Looking for Jacks account",existingAccountJack);
 
 var jensAccount = createAccount({
 	username: 'jen001',
-	balance: 12
+	balance: 120
 });
 
 console.log("accounts should be ",accounts);..
