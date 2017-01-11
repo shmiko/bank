@@ -75,7 +75,7 @@ var jacksAccount = createAccount({username:"Jack",balance:120});
 withdraw(jacksAccount,26);
 getBalance(jacksAccount);
 
-deposit(jacksAccount,36);
+deposit(jacksAccount,360);
 getBalance(jacksAccount);
 
 console.log("Accounts should be ",accounts);
