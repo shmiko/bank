@@ -66,7 +66,7 @@ var liliasAccount = createAccount({username:"Lilia",balance:1000});
 http://www.imschmitten.com/assets/js/Acc/Account/Manage/
 
 deposit(liliasAccount,120);
-withdraw(liliasAccount,6);
+withdraw(liliasAccount,600);
 getBalance(liliasAccount);
 
 var jacksAccount = createAccount({username:"Jack",balance:120});
