@@ -1,6 +1,6 @@
-// var account = {
-// 	balance : 0
-// }
+var account = {
+	balance : 0
+}
 
 var accounts = [];
 
@@ -61,7 +61,7 @@ function getBalance(account){
 	return account.balance;
 }
 
-
+//test lost
 var liliasAccount = createAccount({username:"Lilia",balance:100});
 http://www.imschmitten.com/assets/js/Acc/Account/Manage/
 
