@@ -1,6 +1,6 @@
-var account = {
-	balance : 0
-}
+// var account = {
+// 	balance : 0
+// }
 
 var accounts = [];
 
